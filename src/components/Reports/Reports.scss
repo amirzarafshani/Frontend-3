@@ -1,0 +1,184 @@
+.reportsPageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .titleContainer {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .subTitle {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #7e8299;
+      }
+    }
+    .filtersContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      .generateReportBtn {
+        width: 120px;
+        height: 32px;
+        border-radius: 5px;
+        background: #005b96;
+        border-radius: 5px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .reportsDataWithChartContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .chartContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    .pieChartContainer {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .totalContainer {
+    margin-top: 20px;
+    background: #f1fafe;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .reportsTableContainer {
+    flex: 1;
+    background: #f1fafe;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    .topFilterNames {
+      display: flex;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .reportsDataContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      .reportItemTitle {
+        cursor: pointer;
+        height: 70px;
+        padding: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .reportTable {
+        margin: 10px 0;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        th,
+        td {
+          height: 35px;
+          padding: 0 15px;
+          text-align: center;
+        }
+        th:first-child,
+        td:first-child {
+          text-align: left;
+        }
+        th:last-child,
+        td:last-child {
+          text-align: right;
+        }
+        th,
+        tr:nth-child(even) td {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.noData {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .text1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .text2 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7e8299;
+    width: 420px;
+    text-align: center;
+  }
+  .noDataImg {
+    margin-top: 25px;
+    width: 400px;
+  }
+}
+
+.materialSelect {
+  background-color: #1bc5bd !important;
+  color: #fff !important;
+  min-width: 150px !important;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 5px;
+  svg {
+    fill: #fff;
+  }
+  :hover {
+    border: none !important;
+  }
+}
+
+.dateSelect {
+  background-color: #1bc5bd !important;
+  color: #fff !important;
+  width: 130px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 5px;
+  input {
+    all: unset;
+    width: 100%;
+    color: #fff !important;
+    &::-webkit-input-placeholder {
+      color: #fff !important;
+    }
+  }
+  svg {
+    fill: #fff;
+  }
+}

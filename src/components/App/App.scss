@@ -1,0 +1,74 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #f3f6f9;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 30px;
+    .leftIcons {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
+    .rightIcons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .jdIcon {
+        background-color: #f6ca65;
+        border-radius: 5px;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 23px;
+        font-weight: bold;
+      }
+      .jdText {
+        font-size: 16px;
+        color: #005b96;
+        font-weight: bold;
+      }
+    }
+  }
+  .main {
+    min-height: 100%;
+    display: flex;
+    flex: 1;
+    .sidebar {
+      padding: 40px 0;
+      min-height: 100%;
+      width: 80px;
+      .nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+    .body {
+      flex: 1;
+      min-height: 100%;
+      padding: 35px 80px 35px 25px;
+      .footer {
+        font-weight: bold;
+        font-size: 16px;
+        color: #005b96;
+      }
+    }
+  }
+}
